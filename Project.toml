@@ -1,0 +1,7 @@
+name = "MeshPlots"
+uuid = "de9684d3-f81f-49d9-ae9e-c828b202dea9"
+authors = ["Elias Carvalho <eliascarvdev@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"
