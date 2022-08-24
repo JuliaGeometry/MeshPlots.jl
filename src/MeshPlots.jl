@@ -1,6 +1,7 @@
 module MeshPlots
 
 using Meshes
+using Tables
 using RecipesBase
 
 # import categorical arrays as a temporary solution for plot recipes
