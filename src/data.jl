@@ -18,7 +18,7 @@
 
   for (i, var) in enumerate(vars)
     # data for variable
-    vals = data[var]
+    vals = getproperty(data, var)
 
     # handle categorical values
     v = eltype(vals) <: CategoricalValue ? levelcode.(vals) : vals
