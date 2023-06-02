@@ -51,14 +51,14 @@ end
     mesh  = discretize(polyarea, FIST())
     geoms = collect(mesh)
   else
-    geoms = [first(chains(polyarea))]
+    geoms = [first(rings(polyarea))]
   end
 
   seriestype --> :path
   @series begin
     geoms
   end
-  for chain in chains(polyarea)
+  for chain in rings(polyarea)
     @series begin
       primary --> false
       chain
